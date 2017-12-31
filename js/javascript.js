@@ -1,6 +1,14 @@
 $(document).ready(function () {
 
     /* 
+        Component: Scroll animations
+        Description:
+        Using WOw.js and animate.css for creating scroll animations on content. May be customized furtheer, see wow.js docs for more info.
+    */
+    new WOW().init();
+
+
+    /* 
         Component: Navbar fixed on scroll
         Description:
         Fix navbar to top after the user scrolls past the main header section, and remove the fix positioning when user scrolls back to top

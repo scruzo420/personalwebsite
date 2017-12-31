@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/font-awesome.css">
     <link rel="stylesheet" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -62,7 +63,7 @@
         </nav>
     </div>
     <main class="container-fluid">
-        <section class="about-backgrnd" id="aboutMe">
+        <section class="about-backgrnd wow fadeInUpBig" data-wow-duration="1s" id="aboutMe">
 
             <div class="row">
                 <div class="col-md-8">
@@ -78,7 +79,7 @@
 
 
         </section>
-        <section class="featured-img fixed-bg bg-img" id="firstQuote">
+        <section class="featured-img fixed-bg bg-img wow zoomIn" data-wow-duration="2contacts" id="firstQuote">
             <div class="row">
                 <div class="col-lg-12 ">
                     <h2>A LITTLE PROGRESS EACH DAY, ADDS UP
@@ -93,7 +94,7 @@
                 <div class="col-lg-12">
                     <h1 class="services-text">HOBBIES</h1>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 wow slideInLeft">
                     <div class="icon">
                         <i class="fa fa-paint-brush" aria-hidden="true"></i>
                     </div>
@@ -103,7 +104,7 @@
                         Realizing my passion for technology at a young age, i
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 wow slideInUp">
                     <div class="icon">
                         <i class="fa fa-music" aria-hidden="true"></i>
                     </div>
@@ -113,7 +114,7 @@
                         djadnajnfs
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 wow slideInRight">
                     <div class="icon">
                         <i class="fa fa-address-book-o" aria-hidden="true"></i>
                     </div>
@@ -320,6 +321,24 @@
             </div>
 
         </section>
+
+        <section class="animations-showcase">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 align-center">
+                    <h2>Animations/Transitions
+                        <span>Showcase</span>
+                    </h2>
+                    <div class="solar-system-container">
+                        <div class="sun"></div>
+                        <div class="mercury"></div>
+                        <div class="venus"></div>                        
+                        <div class="earth"></div>
+                        <div class="mars"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section>
             <div class="row">
                 <div class="col-md-8 contact-me">
@@ -427,6 +446,7 @@
     </main>
     <script src="./vendor/js/jquery-3.2.1.js"></script>
     <script src="./vendor/js/bootstrap.js"></script>
+    <script src="./vendor/js/wow.min.js"></script>
     <script src="./js/javascript.js"></script>
 </body>
 

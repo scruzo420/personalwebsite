@@ -22,6 +22,9 @@ body{
     width: 100%;
     
 }
+.wow { 
+    visibility: hidden; 
+}
 .flex{
     display: flex;
 }
@@ -165,6 +168,72 @@ header .container-fluid > div{
     margin-bottom: 25px;
     margin-top: 35px;
 }
+
+/* Animations Showcase */
+.animations-showcase{
+    background-color: #43a3d5;
+}
+.animations-showcase h2{
+    text-transform: uppercase;
+
+}
+.solar-system-container{
+    position: relative;
+    min-height: 400px;
+}
+.solar-system-container > div{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%) translateY(0);
+    border-radius: 50%;
+}
+.solar-system-container .sun{
+    background-color: #FCBD07;
+    width: 80px;
+    height: 80px;
+    transform: translateX(-50%) translateY(-50%);
+}
+.solar-system-container .mercury{
+    background-color: #9f5e26;
+    width: 10px;
+    height: 10px;
+    top: 35%;
+    transform: translateX(200px);
+	animation: orbitaMercurio 15s linear infinite;
+    
+}
+.solar-system-container .venus{
+    background-color: #BEB768;
+    width: 25px;
+    height: 25px;
+    top: 25%;
+    
+}
+.solar-system-container .earth{
+    background-color: #11abe9;
+    width: 20px;
+    height: 20px;
+    top: 15%;
+    
+}
+.solar-system-container .mars{
+    background-color: #cf3921;
+    width: 30px;
+    height: 30px;
+    top: 5%;
+}
+
+@keyframes orbitaMercurio {
+	from { 	transform: rotate(0deg) translateX(100px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+@-webkit-keyframes orbitaMercurio {
+	from { 	transform: rotate(0deg) translateX(100px) rotate(0deg); }
+	to   {  transform: rotate(360deg) translateX(100px) rotate(-360deg); }
+}
+
+
 
 /* Footer */
 footer{
